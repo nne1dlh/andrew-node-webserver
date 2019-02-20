@@ -19,12 +19,12 @@ app.use((req,res,next) => {
     next();
 });
 
-app.use((req,res,next) => {
-    res.render('maintenance.hbs', {
-        pageTitle: "Page Under Construction",
-        welcomeMess: "Page currently under construxction"
-    });
-});
+// app.use((req,res,next) => {
+//     res.render('maintenance.hbs', {
+//         pageTitle: "Page Under Construction",
+//         welcomeMess: "Page currently under construxction"
+//     });
+// });
 app.use(xpress.static(__dirname + '/public'));
 
 
