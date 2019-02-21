@@ -1,7 +1,7 @@
 const xpress = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
-
+//https://boiling-reaches-72857.herokuapp.com/about
 const PORT = process.env.PORT || 3000;
 
 var app = xpress();
@@ -52,6 +52,12 @@ app.get('/about', (req,res) => {
     res.render('about.hbs', {
         pageTitle: 'About Page',
         
+    });
+});
+
+app.get('/project', (req,res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Projects'
     });
 });
 
